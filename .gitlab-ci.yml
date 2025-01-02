@@ -1,0 +1,12 @@
+stages:
+  - lint
+  - test
+
+code_quality:
+  stage: lint
+  image: registry.gitlab.com/gitlab-org/ci-cd/codequality:latest
+  script:
+    - echo "Running Code Quality analysis..."
+  artifacts:
+    paths:
+      - gl-code-quality-report.json
