@@ -9,6 +9,10 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
+    "engines": {
+        "node": "22.x",
+        "npm": "10.x"
+    },
     "devDependencies": {
         "axios": "^1.7.9",
         "bootstrap": "^5.3.3",
